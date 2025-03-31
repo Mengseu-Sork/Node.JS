@@ -50,7 +50,7 @@ router.put('/:id', (req, res)=>{
     })
 });
 
-router.post('', (req, res)=>{
+router.post('/', (req, res)=>{
     let users = req.body;
 
     let sql = 'INSERT INTO users (name, age, email) VALUE ?';
